@@ -41,7 +41,7 @@ class ProductManager {
     getProductsById = (id) => {
       let aux = this.listProducts.filter((prod) => prod.id == id);
       if (aux.length === 0) {
-        console.log('Product with ID:',id,'not found');
+        console.log('Product not found');
       } else {
         console.log('The product is:', aux);
       }
@@ -65,3 +65,4 @@ class ProductManager {
   
   //Get a product by ID
   const productss = productManager.getProductsById(4);
+  
